@@ -2,8 +2,31 @@ resource "aws_instance" "web" {
   ami           = variable.ami
   instance_type = variable.instance_type
   subnet_id = variable.subnet_id
-  
+  security_groups = variable.security_groups
+
   tags = {
-    Name = "HelloWorld"
+    Name = "HelloWorld-TR1"
+  }
+}
+
+resource "aws_instance" "web" {
+  ami           = variable.ami
+  instance_type = variable.instance_type
+  subnet_id = variable.subnet_id
+  security_groups = variable.security_groups
+   
+  tags = {
+    Name = "HelloWorld-TR2"
+  }
+}
+
+resource "aws_instance" "web" {
+  ami           = variable.ami
+  instance_type = variable.instance_type
+  subnet_id = variable.subnet_id
+  security_groups = variable.security_groups
+   
+  tags = {
+    Name = "HelloWorld-Tr3"
   }
 }
