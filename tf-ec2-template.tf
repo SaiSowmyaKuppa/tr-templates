@@ -1,4 +1,4 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "web1" {
   ami           = variable.ami
   instance_type = variable.instance_type
   subnet_id = variable.subnet_id
@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "web2" {
   ami           = variable.ami
   instance_type = variable.instance_type
   subnet_id = variable.subnet_id
@@ -20,7 +20,7 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "web3" {
   ami           = variable.ami
   instance_type = variable.instance_type
   subnet_id = variable.subnet_id

@@ -14,6 +14,6 @@ variable "subnet_id"{
     default="subnet-035df9b465a560524"
 }
 
-variable "subnet_id"{
+variable "security_groups"{
     default="sg-0502cf0aadfab4ee0"
 }
