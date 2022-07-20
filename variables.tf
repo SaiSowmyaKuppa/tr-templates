@@ -1,19 +1,19 @@
-variable "region"{
+var "region"{
     default ="us-east-1"
 }
 
-variable "ami"{
+var "ami"{
     default ="ami-0e8daf8bfc276c129"
 }
 
-variable "instance_type"{
+var "instance_type"{
     default ="t2.micro"
 }
 
-variable "subnet_id"{
+var "subnet_id"{
     default="subnet-035df9b465a560524"
 }
 
-variable "security_groups"{
+var "security_groups"{
     default="sg-0502cf0aadfab4ee0"
 }
